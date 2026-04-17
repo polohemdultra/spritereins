@@ -1,0 +1,6 @@
+{
+  "name": "Remix: PixelBrutal Sprite Editor",
+  "description": "A minimalistic, brutalist pixel art sprite editor with layer support and onion skinning.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}

@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  * {
+    border-radius: 0 !important;
+  }
+
+  body {
+    @apply bg-white text-black font-mono overflow-hidden;
+  }
+
+  button {
+    @apply border-2 border-black px-3 py-1 bg-white hover:bg-black hover:text-white transition-colors cursor-pointer;
+  }
+
+  .brutal-border {
+    @apply border-2 border-black;
+  }
+
+  .tab-active {
+    @apply bg-black text-white;
+  }
+}
+
+/* Custom Scrollbar for brutalist look */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: white;
+  border-left: 2px solid black;
+}
+::-webkit-scrollbar-thumb {
+  background: black;
+}
